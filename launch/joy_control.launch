@@ -1,0 +1,10 @@
+<launch>
+<include file="$(find xbox360_controller_interface)/launch/xbox360joy.launch"/>
+
+
+<node name="quadruped_joy_control_node" pkg="xbox360_controller_interface" type="quadruped_teleop_node" output="screen">
+    <param name="scale_linear" value="1.5"/>
+    <param name="scale_angular" value="1.5"/>
+</node>
+
+</launch>
